@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Mostrar formulario de registro
 registerLink.addEventListener("click", (event) => {
     event.preventDefault();
+    fondo.classList.remove('normal');
     fondo.classList.add('active'); // Mostrar el fondo
     loginForm.style.display = 'none'; // Ocultar login
     registerForm.style.display = 'block'; // Mostrar registro
@@ -19,7 +20,8 @@ registerLink.addEventListener("click", (event) => {
 // Mostrar formulario de inicio de sesión
 loginLink.addEventListener("click", (event) => {
     event.preventDefault();
-    fondo.classList.remove('active'); // Mostrar el fondo
+    //fondo.classList.remove('active');  Mostrar el fondo
+    fondo.classList.add('normal');
     registerForm.style.display = 'none'; // Ocultar registro
     loginForm.style.display = 'block'; // Mostrar login
 });
@@ -28,9 +30,9 @@ loginLink.addEventListener("click", (event) => {
 btn.addEventListener("click", (event) => {
     event.preventDefault();
     console.log("Botón de Iniciar Sesión clicado");
-    fondo.classList.remove('active');
+    fondo.classList.add('normal');
+    registerForm.style.display = 'none'; // Ocultar registro
     loginForm.style.display = 'block'; // Mostrar login
-    registerForm.style.display = 'block'; // Mostrar registro
 });
 
 // Botón de registrar grande
@@ -43,6 +45,7 @@ btnRegistrar.addEventListener("click", (event) => {
 // Botón de cerrar
 iconoCerrar.addEventListener("click", () => {
     fondo.classList.remove('active');
+    fondo.classList.remove('normal');
     loginForm.style.display = 'none';  // Ocultar formulario de login
     registerForm.style.display = 'none'; // Ocultar formulario de registro
 });
