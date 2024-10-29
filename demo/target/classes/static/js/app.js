@@ -19,18 +19,21 @@ registerLink.addEventListener("click", (event) => {
 // Mostrar formulario de inicio de sesión
 loginLink.addEventListener("click", (event) => {
     event.preventDefault();
-    fondo.classList.add('active'); // Mostrar el fondo
+    fondo.classList.remove('active'); // Mostrar el fondo
     registerForm.style.display = 'none'; // Ocultar registro
     loginForm.style.display = 'block'; // Mostrar login
 });
 
-
+//Botón de Iniciar Sesion ARRIBA
 btn.addEventListener("click", (event) => {
     event.preventDefault();
     console.log("Botón de Iniciar Sesión clicado");
     fondo.classList.remove('active');
+    loginForm.style.display = 'block'; // Mostrar login
+    registerForm.style.display = 'block'; // Mostrar registro
 });
 
+// Botón de registrar grande
 btnRegistrar.addEventListener("click", (event) => {
     event.preventDefault();
     console.log("Botón de Registrar clicado");

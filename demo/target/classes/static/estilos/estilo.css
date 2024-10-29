@@ -103,7 +103,7 @@ de sesion cuando se posa el cursor*/
 }
 
 .fondo .active .btn-iniciar-sesion{
-    transform: scale(1);
+    transform: scale(0);
 }
 
 .fondo.active{
