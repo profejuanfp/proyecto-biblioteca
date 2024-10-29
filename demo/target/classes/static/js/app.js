@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const registerForm = document.querySelector(".contenedor-form-registro");
     const loginLink = document.querySelector(".login-link");
     const registerLink = document.querySelector(".registrar-link");
-    const btn = document.querySelector(".btn");
+    const btn = document.querySelector(".btn-iniciar-sesion");
     const btnRegistrar = document.querySelector(".btn-registrar");
     const iconoCerrar = document.querySelector(".icono-cerrar");
 
