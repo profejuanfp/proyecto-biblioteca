@@ -1,6 +1,6 @@
 package com.example;
 
-public class Bibliotecario extends Usuario
+public class Bibliotecario extends UsuarioP
 {
     private String usuario;
     private String contraseña;
@@ -67,5 +67,9 @@ public class Bibliotecario extends Usuario
     public void eliminarPrestamo (PrestamoInterno prestamo)
     {
         biblioteca.eliminarPrestamo(prestamo);
+    }
+
+    public void agregarEtiqueta (Etiqueta etiqueta, Libro libro){
+        libro.agregarEtiqueta(etiqueta);
     }
 }
