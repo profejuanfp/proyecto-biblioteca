@@ -72,4 +72,8 @@ public class Bibliotecario extends UsuarioP
     public void agregarEtiqueta (Etiqueta etiqueta, Libro libro){
         libro.agregarEtiqueta(etiqueta);
     }
+
+    public void eliminarEtiqueta (Libro libro, Etiqueta etiqueta){
+        libro.eliminarEtiqueta(etiqueta);
+    }
 }
