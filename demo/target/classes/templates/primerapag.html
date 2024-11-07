@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b98268a861.js" crossorigin="anonymous"></script> <!--Esta linea nos permite traer iconos de la pagina fontawesome-->
+    <script src="js/app.js"></script>
+    <title>Home Biblioteca</title><!--Esta linea es para modificar la palabra de la pestaña de Google-->
+    <link rel="stylesheet" href="estilos/estilo.css"> <!--Esta linea es para que nos tome los estilos de la carpeta estilos-->
+</head>
+<body>
+    <nav class="menu">
+        <ul class="lista">
+
+            <li class="list_item">
+                <div class="list_button">
+                    <span class="icono"><i class="fa-solid fa-house"></i></span> <!--Icono de casa-->
+                    <a href="#" class="nav_link">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list_item">
+                <div class="list_button list_button--click">
+                    <span class="icono"><i class="fa-solid fa-book"></i></span> <!--Icono de libro-->
+                    <a href="#" class="nav_link">Libros</a>
+                    <span class="icono"><i class="fa-solid fa-chevron-right"></i></span> <!--Icono de flecha-->
+                </div>
+
+                <ul class="list_show">
+                    <li class="list_inside">
+                        <a href="#" class="nav_link nav_link--inside">Temas</a>
+                    </li>
+                    <li class="list_inside">
+                        <a href="#" class="nav_link nav_link--inside">Autores</a>
+                    </li>
+                    <li class="list_inside">
+                        <a href="#" class="nav_link nav_link--inside">Categorias</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+</body>
+</html>
