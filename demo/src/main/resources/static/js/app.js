@@ -49,4 +49,6 @@ iconoCerrar.addEventListener("click", () => {
     loginForm.style.display = 'none';  // Ocultar formulario de login
     registerForm.style.display = 'none'; // Ocultar formulario de registro
 });
+
 });
+
