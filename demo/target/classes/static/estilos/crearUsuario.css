@@ -175,7 +175,7 @@ menu.active.lista{
     max-height: 0;  /* Inicialmente, el submenú está oculto */
     transition: max-height 0.4s ease-in-out;  /* Transición suave para expandir */
 }
-.contenedor-agregar-libro{
+.contenedor-crear-usuario{
     position: fixed;
     top: 20%;
     left: 36%;
@@ -199,17 +199,17 @@ menu.active.lista{
     z-index: 10;
 }
 
-.contenedor-agregar-libro.active{
+.contenedor-crear-usuario .active{
     transition: transform .17s ease;
     transform: scale(1);
 }
 
-.contenedor-agregar-libro .icono-cerrar{
+.contenedor-crear-usuario .icono-cerrar{
     position: absolute;
     top: 0px;
     right: 0;
     width: 45px;
-    height: 45px;
+    height:45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +220,7 @@ menu.active.lista{
     color: #000000;
 }
 
-.contenedor-agregar-libro h2{
+.contenedor-crear-usuario h2{
     font-size: 2em;
     color: #000000;
     text-align: center;

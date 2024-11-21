@@ -19,3 +19,35 @@ listElement.forEach(listElement => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const iconoMenu = document.querySelector(".icono-menu");
+    const iconoCerrar = document.querySelector(".icono-cerrar");
+    const menu = document.querySelector (".menu");
+    const lista = document.querySelector(".lista");
+    const agregarLibro = document.querySelector(".contenedor-agregar-libro")
+
+    // Botón menu
+    iconoMenu.addEventListener("click", () => {
+        console.log("Botón de Iniciar Sesión clicado");
+        menu.classList.add('active');
+        iconoMenu.classList.add('active');
+        lista.style.display = 'block'; // Mostrar menu
+        iconoMenu.style.display = 'none'; // Ocultar icono de menu
+    });
+    
+    // Botón cerrar
+    iconoCerrar.addEventListener("click", () => {
+        console.log("Botón de Cerrar Sesión clicado");
+        menu.classList.remove('active');
+        iconoMenu.classList.remove('active');
+        lista.style.display = 'none'; // Ocultar menu
+        iconoMenu.style.display = 'block'; // Mostrar icono de menu
+    });
+
+    // Botón agregar libro
+    agregarLibro.addEventListener("click", () => {
+        console.log("Botón de Agregar Libro clicado");
+        agregarLibro.classList.toggle('active');
+    });
+});

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b98268a861.js" crossorigin="anonymous"></script> <!--Esta linea nos permite traer iconos de la pagina fontawesome-->
-    <title>Home Biblioteca</title><!--Esta linea es para modificar la palabra de la pestaña de Google-->
-    <link rel="stylesheet" href="../static/estilos/estiloHome.css"> <!--Esta linea es para que nos tome los estilos de la carpeta estilos-->
+    <title>Crear Usuario</title><!--Esta linea es para modificar la palabra de la pestaña de Google-->
+    <link rel="stylesheet" href="../static/estilos/crearUsuario.css"> <!--Esta linea es para que nos tome los estilos de la carpeta estilos-->
 </head>
 <body>
     <header class="header">
@@ -112,59 +112,45 @@
             </ul>
         </nav>
         
-        <div class="contenedor-agregar-libro">
+        <div class="contenedor-crear-usuario">
             <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span> <!--Icono de cerrar-->
-            <h2>Agregar Libro</h2>
+            <h2>Crear Usuario</h2>
             <form action="#">
                 
                 <div class="contenedor-input">
                     <span class="icono"><i class="fa-solid fa-key"></i></span> <!--Icono de llave-->
                     <input type="text" required>
-                    <label for="#">CDU</label>
+                    <label for="#">DNI</label>
                 </div>
 
                 <div class="contenedor-input">
                     <span class="icono"><i class="fa-solid fa-book"></i></span> <!--Icono de libro-->
                     <input type="text" required>
-                    <label for="#">Titulo del Libro</label>
+                    <label for="#">Nombre</label>
                 </div>
 
                 <div class="contenedor-input">
                     <span class="icono"><i class="fa-solid fa-user"></i></span> <!--Icono de usuario-->
                     <input type="text" required>
-                    <label for="#">Autor del Libro</label>
+                    <label for="#">Apellido</label>
                 </div>
 
                 <div class="contenedor-input">
                     <span class="icono"><i class="fa-solid fa-newspaper"></i></span> <!--Icono de editorial-->
-                    <input type="text" required>
-                    <label for="#">Editorial</label>
+                    <input type="email" required>
+                    <label for="#">Email</label>
                 </div>
 
-                <div class="prestable">
-                    <label for="#"><input type="checkbox">Prestamo Externo</label>
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-calendar-alt"></i></span> <!--Icono de fecha-->
+                    <input type="date" required>
                 </div>
 
-                <div class="select">
-                    <select class="form-control">
-                        <option value="0">Seleccione un Tema</option>
-                        <option value="1">Matematica</option>
-                        <option value="2">Biologia</option>
-                        <option value="3">Historia</option>
-                        <option value="4">Quimica</option>
-                        <option value="5">Fisica</option>
-                        <option value="6">Literatura</option>
-                        <option value="7">Ingles</option>
-                        <option value="8">Geografia</option>
-                        <option value="9">Diccionario</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="btn-agregar-libro">Agregar Libro</button>
+                <button type="submit" class="btn-agregar-libro">Agregar Usuario</button>
 
             </form>
         </div>
 
-    <script src="../static/js/home.js"></script>
+    <script src="../static/js/crearUsuario.js"></script>
 </body>
 </html>

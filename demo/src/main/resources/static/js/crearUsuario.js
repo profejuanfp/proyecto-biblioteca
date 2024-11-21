@@ -44,10 +44,4 @@ document.addEventListener("DOMContentLoaded", () => {
         lista.style.display = 'none'; // Ocultar menu
         iconoMenu.style.display = 'block'; // Mostrar icono de menu
     });
-
-    // Botón agregar libro
-    agregarLibro.addEventListener("click", () => {
-        console.log("Botón de Agregar Libro clicado");
-        agregarLibro.classList.toggle('active');
-    });
 });
