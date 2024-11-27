@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EAEBEF;
+    min-height: 100vh;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #5b08a0;
+}
+
+.buscador{
+    position: relative;
+    display: flex;
+    align-items: center;  /* Alinea los elementos verticalmente al centro */
+    justify-content: center; /* Alinea los elementos horizontalmente al centro */
+}
+
+.buscador input {
+    width: 240px;
+    height: 27px;
+    font-size: 14px;
+    padding: 0 20px;
+    color: #000000;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid silver;
+    padding-right: 40px;  /* Ajusta el espacio para el icono del botón */
+}
+
+.btn-buscar{
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    right: 0px; 
+    transform: translateY(-50%); /* Alinea verticalmente al centro */
+    background: #3b0568;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.icono-perfil{
+    margin-right: 20px;
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.container .icono-menu{
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1); /*Con este comando lo ocultamos cuando esta en 0*/
+}
+
+.container .icono-menu.active{
+    transform: scale(0); /*Con este comando lo ocultamos cuando esta en 0*/
+}
+
+.menu{
+    width: 300px;
+    transition: transform .5s ease height .2s ease;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 20px 20px 0;
+    background: #fff;
+    transform: scale(0); /*Con este comando lo ocultamos cuando esta en 0*/
+}
+
+.menu.active{
+    transition: transform .3s ease-in-out;
+    transform: scale(1);
+}
+
+.menu.lista{
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+}
+
+menu.active.lista{
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(20px);
+}
+
+.menu .icono-cerrar{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1em;
+    color: #000000;
+}
+
+.list_item{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden; /*Esto es para desaparesca cuando estan oculta las opciones*/
+    cursor: pointer;
+}
+
+.list_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: auto;
+}
+
+.arrow .icono_flecha{
+    transform: rotate(90deg);
+}
+
+.icono_flecha{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.nav_link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.nav_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav_link--inside:hover{
+    background: #F6F8FA;
+}
+
+.list_show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #303440;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;  /* Inicialmente, el submenú está oculto */
+    transition: max-height 0.4s ease-in-out;  /* Transición suave para expandir */
+}
+.contenedor-agregar-libro{
+    position: fixed;
+    top: 20%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    width:500px;
+    height: 600px;
+    max-width: 90%; /* Se ajusta a un 90% del ancho de la pantalla */
+    max-height: 90%; /* Se ajusta a un 90% de la altura de la pantalla */
+    background:#ffffff ;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    backdrop-filter: blur(20px); /*Este comando espara hacer el disfuminado*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: flex-start; /* Asegura que los elementos estén alineados al principio (arriba) */
+    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; /* Alineación vertical de los elementos */
+    overflow: hidden;
+    transition: transform .5s ease height .2s ease;
+    transform: scale(0); /*Con este comando lo ocultamos cuando esta en 0*/
+    z-index: 10;
+}
+
+.contenedor-agregar-libro.active{
+    transition: transform .17s ease;
+    transform: scale(1);
+}
+
+.contenedor-agregar-libro .icono-cerrar{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1em;
+    color: #000000;
+}
+
+.contenedor-agregar-libro h2{
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    margin-top: 30px; 
+    margin-bottom: 20px; /* Espacio debajo del título para separación */
+}
+.contenedor-input{
+    position: relative;
+    width: 80%;
+    height: 50px;
+    border-bottom: 2px solid #706d6d;
+    margin-top: 20px;
+}
+
+.contenedor-input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .4s;
+    color: #8b8b8b;
+}
+
+/*Este comando es para que la palabra "email" y "contraseña" 
+se muevan para arriba cuando clikeas para llenar*/
+.contenedor-input input:focus~label,
+.contenedor-input input:valid~label{
+    top: -5px;
+}
+
+/*Este comando es para modificar los recuadros blancos del
+input, osea donde se ponen los datos email y contraseña*/
+.contenedor-input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color:#8b8b8b;
+    padding: 0 35px 0 5px;
+}
+
+.contenedor-input .icono{
+    position: absolute;
+    right: 8px;
+    font-size: 1.4em;
+    color: #000000;
+    line-height: 57px;
+}
+
+.prestable{
+    font-size: 1em;
+    margin-bottom: 15;
+    display: flex;
+    font-weight: 600;
+    justify-content: flex-start; /* Asegura que los elementos estén alineados al principio (arriba) */
+    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column;
+}
+
+.prestable label{
+    color: #000000;
+    font-size: 1em;
+}
+.btn-agregar-libro{
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #5b08a0;
+    color: #f1efef;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-agregar-libro:hover{
+    background: #fff;
+    color: #1d0f09;
+}
