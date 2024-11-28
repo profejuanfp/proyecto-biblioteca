@@ -34,7 +34,7 @@ header {
     justify-content: center; /* Alinea los elementos horizontalmente al centro */
 }
 
-input {
+.buscador input {
     width: 240px;
     height: 27px;
     font-size: 14px;
