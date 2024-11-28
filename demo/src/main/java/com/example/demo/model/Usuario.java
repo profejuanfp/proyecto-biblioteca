@@ -9,12 +9,13 @@ public class Usuario {
     private String telefono;
     private boolean docente;
     
-    public Persona ()
+    public Usuario ()
     {
         
     }
 
-    public Persona (String nombreApellido, String dni, String direccion, String telefono){
+    public Usuario (String nombreApellido, String dni, String direccion, String telefono)
+    {
         this.nombreApellido = nombreApellido;
         this.dni = dni;
         this.direccion = direccion;
@@ -32,17 +33,9 @@ public class Usuario {
         this.nombreApellido = nombreApellido;
     }
 
-    public boolean getDocente (){
-        return docente;
-    }
-
-    public void setDocente (){
-        docente != docente; 
-    }
-
     public String getEmail (){
         return email;
-    } 
+    }
 
     public void setEmail (String email){
         this.email = email;

@@ -1,11 +1,14 @@
 package com.example;
 
-public class Libro extends Articulo 
+import com.example.Articulo;
+
+public class Libro extends Articulo
 {
     private String titulo;
     private String genero;
     private String autor;
     private String año;
+    private String etiqueta;
     private int cantidadDisponible;
 
     public Libro ()
@@ -56,5 +59,13 @@ public class Libro extends Articulo
 
     public void mostrar (){
         System.out.println(titulo + " " + autor + " " + genero);
+    }
+
+    public void agregarEtiqueta (String etiqueta) {
+        this.etiqueta = etiqueta;
+    }
+
+    public void eliminarEtiqueta () {
+        this.etiqueta = null;
     }
 }

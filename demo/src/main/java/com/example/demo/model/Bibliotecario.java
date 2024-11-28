@@ -1,6 +1,8 @@
 package com.example;
 
-public class Bibliotecario extends UsuarioP
+import main.java.com.example.demo.model.Libro;
+
+public class Bibliotecario extends Usuario
 {
     private String usuario;
     private String contraseña;
@@ -70,10 +72,10 @@ public class Bibliotecario extends UsuarioP
     }
 
     public void agregarEtiqueta (Etiqueta etiqueta, Libro libro){
-        libro.agregarEtiqueta(etiqueta);
+        libro.agregarEtiqueta();
     }
 
-    public void eliminarEtiqueta (Libro libro, Etiqueta etiqueta){
-        libro.eliminarEtiqueta(etiqueta);
+    public void eliminarEtiqueta (Etiqueta etiqueta, Libro libro){
+        libro.eliminarEtiqueta();
     }
 }
