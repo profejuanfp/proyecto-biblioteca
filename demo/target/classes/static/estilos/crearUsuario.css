@@ -11,7 +11,7 @@ body {
     background: #EAEBEF;
     min-height: 100vh;
     position: relative;
-    justify-content: space-between;
+    justify-content:center;
     display: flex;
 }
 

@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menu = document.querySelector (".menu");
     const lista = document.querySelector(".lista");
     const agregarLibro = document.querySelector(".contenedor-agregar-libro");
+    const btnAgregarLibro = document.querySelector ("#agregar-libro")
 
     // Botón menu
     iconoMenu.addEventListener("click", () => {
@@ -46,8 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Botón agregar libro
-    agregarLibro.addEventListener("click", () => {
+    btnAgregarLibro.addEventListener("click", () => {
         console.log("Botón de Agregar Libro clicado");
-        agregarLibro.classList.toggle('active');
+        alert
+        agregarLibro.classList.add('active');
+        agregarLibro.style.display = 'block'
     });
 });
