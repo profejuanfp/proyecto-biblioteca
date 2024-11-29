@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const iconoCerrar = document.querySelector(".icono-cerrar");
     const menu = document.querySelector (".menu");
     const lista = document.querySelector(".lista");
-    const agregarLibro = document.querySelector(".contenedor-agregar-libro")
+    const agregarLibro = document.querySelector(".contenedor-agregar-libro");
     const btnAgregarLibro = document.querySelector ("#agregar-libro")
 
     // Botón menu
