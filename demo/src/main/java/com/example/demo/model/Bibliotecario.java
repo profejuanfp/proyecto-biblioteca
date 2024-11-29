@@ -71,11 +71,11 @@ public class Bibliotecario extends Usuario
         biblioteca.eliminarPrestamo(prestamo);
     }
 
-    public void agregarEtiqueta (Etiqueta etiqueta, Libro libro){
+    public void agregarEtiqueta (String etiqueta, Libro libro){
         libro.agregarEtiqueta();
     }
 
-    public void eliminarEtiqueta (Etiqueta etiqueta, Libro libro){
+    public void eliminarEtiqueta (String etiqueta, Libro libro){
         libro.eliminarEtiqueta();
     }
 }
