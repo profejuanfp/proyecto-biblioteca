@@ -1,0 +1,108 @@
+﻿Africa;politico;5;5
+Africa;fisico;3;3
+Africa;cultural;5;5
+America del Norte;politico;5;5
+America del Norte;fisico;1;1
+America del Norte;historico;1;1
+America del Sur;politico;5;5
+America del Sur;fisico;4;4
+America del Sur;historico;2;2
+America del Sur;economico;3;3
+Antardida;politico;4;4
+Antardida;historico;5;5
+Asia;politico;5;5
+Asia;fisico;4;4
+Asia;econoimico;5;5
+Buenos Aires;politico;2;2
+Buenos Aires;economico;3;3
+Buenos Aires;fisico;1;1
+Buenos Aires;historico;3;3
+CABA;politico;2;2
+CABA;historico;3;3
+CABA;cultural;3;3
+Catamarca;politico;4;4
+Catamarca;economico;2;2
+Catamarca;historico;5;5
+Chaco;politico;2;2
+Chaco;economico;1;1
+Chaco;fisico;5;5
+Chaco;cultural;1;1
+Chubut;politico;1;1
+Chubut;fisico;4;4
+Chubut;economico;2;2
+Cordoba;politico;2;2
+Cordoba;fisico;1;1
+Cordoba;economico;3;3
+Corrientes;politico;5;5
+Corrientes;fisico;1;1
+Corrientes;economico;2;2
+Corrientes;historico;4;4
+Corrientes;cultural;5;5
+Entre Rios;politico;4;4
+Entre Rios;fisico;4;4
+Entre Rios;economico;2;2
+Entre Rios;historico;1;1
+Europa;politico;2;2
+Europa;economico;4;4
+Europa;fisico;2;2
+Formosa;politico;5;5
+Formosa;economico;2;2
+Formosa;fisico;4;4
+Jujuy;politico;1;1
+Jujuy;economico;4;4
+Jujuy;fisico;5;5
+Jujuy;historico;1;1
+Jujuy;cultural;2;2
+La Pampa;politico;2;2
+La Pampa;fisico;5;5
+La Pampa;economico;2;2
+La Rioja;politico;1;1
+La Rioja;economico;5;5
+Mapamundi;politico;2;2
+Mapamundi;cultural;3;3
+Mapamundi;economico;2;2
+Mendoza;politico;5;5
+Mendoza;economico;3;3
+Mendoza;fisico;1;1
+Mendoza;historico;2;2
+Mendoza;cultural;5;5
+Misiones;politico;4;4
+Misiones;fisico;3;3
+Misiones;cultural;5;5
+Misiones;economico;3;3
+Neuquen;politico;2;2
+Neuquen;economico;3;3
+Oceania;politico;3;3
+Oceania;economico;2;2
+Oceania;fisico;5;5
+Oceania;historico;4;4
+Rio Negro;politico;2;2
+Rio Negro;fisico;4;4
+Rio Negro;economico;1;1
+Rio Negro;cultural;1;1
+Salta;politico;2;2
+Salta;fisico;3;3
+Salta;economico;5;5
+Salta;historico;4;4
+San Juan;politico;2;2
+San Juan;fisico;4;4
+San Juan;economico;3;3
+San Juan;cultural;2;2
+San Juan;historico;2;2
+San Luis;politico;5;5
+San Luis;fisico;1;1
+San Luis;economico;5;5
+San Luis;historico;2;2
+Santa Cruz;politico;1;1
+Santa Cruz;fisico;3;3
+Santa Cruz;economico;3;3
+Santa Fe;politico;1;1
+Santa Fe;fisico;1;1
+Santa Fe;economico;5;5
+Santa Fe;historico;3;3
+Santiago del Estero;politico;2;2
+Santiago del Estero;economico;4;4
+Santiago del Estero;historico;1;1
+Tucuman;politico;3;3
+Tucuman;economico;4;4
+Tucuman;historico;4;4
