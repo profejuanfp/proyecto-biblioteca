@@ -65,7 +65,7 @@ de las palabras cuan el curso se posa*/
     transform-origin: left;
 }
 
-.navegacion .btn{
+.navegacion .btn-iniciar-sesion{
     width: 140px;
     height: 50px;
     background: transparent;
@@ -80,7 +80,7 @@ de las palabras cuan el curso se posa*/
 
 /*La siguientes lineas son para que cambie el boton de inicio
 de sesion cuando se posa el cursor*/
-.navegacion .btn:hover{
+.navegacion .btn-iniciar-sesion:hover{
     background: #fff;
     color: #1d0f09;
 }
@@ -99,15 +99,19 @@ de sesion cuando se posa el cursor*/
     align-items: center;
     overflow: hidden;
     transition: transform .5s ease height .2s ease;
-    transform: scale(1); /*Con este comando lo ocultamos cuando esta en 0*/
+    transform: scale(0); /*Con este comando lo ocultamos cuando esta en 0*/
 }
 
-.fondo .active-btn{
-    transform: scale(1);
-}
 
 .fondo.active{
     height: 500px;
+    transform: scale(1);
+}
+
+.fondo.normal{
+   
+    height: 440px;
+    transform: scale(1); /*Con este comando lo ocultamos cuando esta en 0*/
 }
 
 .fondo .contenedor-form-login{
@@ -123,7 +127,7 @@ de sesion cuando se posa el cursor*/
 
 .fondo.active .contenedor-form-login{
     transition: none;
-    transform: translateX(-400px);
+    transform: translateX(0px);
     /*display:block;  /* Mostrar el de login si está activo */
 }
 
@@ -138,7 +142,7 @@ de sesion cuando se posa el cursor*/
 .fondo.active .contenedor-form-registro{
     transition: transform .17s ease;
     transform: translateX(0);
-    display:block; /* Mostrar el de registro si está activo */
+    /*display:block; Mostrar el de registro si está activo */
 }
 
 .fondo .icono-cerrar{

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b98268a861.js" crossorigin="anonymous"></script> <!--Esta linea nos permite traer iconos de la pagina fontawesome-->
+    <title>Home Biblioteca</title><!--Esta linea es para modificar la palabra de la pestaña de Google-->
+    <link rel="stylesheet" href="../static/estilos/estiloHome.css"> <!--Esta linea es para que nos tome los estilos de la carpeta estilos-->
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <span class="icono-menu"><i class="fa-solid fa-bars"></i></span> <!--Icono de menu-->
+        </div>    
+        <div class="buscador">
+            <form action="#">
+                <input type="text" placeholder="Buscar">
+                <div class="btn-buscar">
+                    <span class="icono-buscar"><i class="fa-solid fa-search"></i></span> <!--Icono de buscar-->
+                </div>
+            </form>
+        </div>
+        <div class="perfil">
+            <span class="icono-perfil"><i class="fa-solid fa-circle-user"></i></span> <!--Icono de perfil-->
+        </div>
+    </header>
+
+
+        <nav class="menu">
+            <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span> <!--Icono de cerrar-->
+            <ul class="lista">
+
+                <li class="list_item">
+                    <div class="list_button">
+                        <span class="icono"><i class="fa-solid fa-house"></i></span> <!--Icono de casa-->
+                        <a href="#" class="nav_link">Inicio</a>
+                    </div>
+                </li>
+
+                <li class="list_item">
+                    <div class="list_button list_button--click">
+                        <span class="icono"><i class="fa-solid fa-book"></i></span> <!--Icono de libro-->
+                        <a href="#" class="nav_link">Libros</a>
+                        <span class="icono_flecha"><i class="fa-solid fa-chevron-right"></i></span> <!--Icono de flecha-->
+                    </div>
+
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside" id="agregar-libro">Agregar Libro</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Eliminar Libro</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Modificar Libro</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ver Libros</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Crear Etiqueta</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Crear Tema</a>
+                        </li>
+                    </ul>
+                 </li>
+
+                <li class="list_item">
+                    <div class="list_button list_button--click">
+                        <span class="icono"><i class="fa-solid fa-paperclip"></i></span> <!--Icono de clip-->
+                                <a href="#" class="nav_link">Prestamos</a>
+                                <span class="icono_flecha"><i class="fa-solid fa-chevron-right"></i></span> <!--Icono de flecha-->
+                    </div>
+
+                    <ul class="list_show">
+                        <li class="list_inside" id="prestamo-interno">
+                            <a href="#" class="nav_link nav_link--inside">Prestamo Interno</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Prestamo Externo</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ver Prestamos</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="list_item">
+                    <div class="list_button list_button--click">
+                        <span class="icono"><i class="fa-solid fa-user"></i></span> <!--Icono de usuario-->
+                        <a href="#" class="nav_link">Usuarios</a>
+                        <span class="icono_flecha"><i class="fa-solid fa-chevron-right"></i></span> <!--Icono de flecha-->
+                    </div>
+
+                    <ul class="list_show">
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Crear Usuario</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Eliminar Usuario</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Modificar Usuario</a>
+                        </li>
+                        <li class="list_inside">
+                            <a href="#" class="nav_link nav_link--inside">Ver Usuarios</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        
+        <div class="contenedor-agregar-libro">
+            <span class="icono-cerrar"><i class="fa-solid fa-xmark"></i></span> <!--Icono de cerrar-->
+            <h2>Agregar Libro</h2>
+            <form action="#">
+                
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-key"></i></span> <!--Icono de llave-->
+                    <input type="text" required>
+                    <label for="#">CDU</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-book"></i></span> <!--Icono de libro-->
+                    <input type="text" required>
+                    <label for="#">Titulo del Libro</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-user"></i></span> <!--Icono de usuario-->
+                    <input type="text" required>
+                    <label for="#">Autor del Libro</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <span class="icono"><i class="fa-solid fa-newspaper"></i></span> <!--Icono de editorial-->
+                    <input type="text" required>
+                    <label for="#">Editorial</label>
+                </div>
+
+                <div class="prestable">
+                    <label for="#"><input type="checkbox">Prestamo Externo</label>
+                </div>
+
+                <div class="select">
+                    <select class="form-control">
+                        <option value="0">Seleccione un Tema</option>
+                        <option value="1">Matematica</option>
+                        <option value="2">Biologia</option>
+                        <option value="3">Historia</option>
+                        <option value="4">Quimica</option>
+                        <option value="5">Fisica</option>
+                        <option value="6">Literatura</option>
+                        <option value="7">Ingles</option>
+                        <option value="8">Geografia</option>
+                        <option value="9">Diccionario</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-agregar-libro">Agregar Libro</button>
+
+            </form>
+        </div>
+
+    <script src="../static/js/home.js"></script>
+</body>
+</html>
